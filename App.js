@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View,Image} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -21,11 +21,12 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Well Hello People!</Text>
+        <Text style={styles.welcome}>Well Hellow People!</Text>
         <Text style={styles.instructions}>Nama  : Rizky Eventa Bahtiar</Text>
-        <Text style={styles.instructions}>No    : 29</Text>
+        <Text style={styles.instructions}>NO    : 29</Text>
         <Text style={styles.instructions}>Kelas : XI RPL 4</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+        <Image style={{height:400,width:400}} source={require('./me.jpg')}/>
       </View>
     );
   }
