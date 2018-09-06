@@ -6,7 +6,9 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <Judul/>
+      <Judul title="BIODATA"/>
+      <Judul title="LOGIN"/>
+      <Judul title="SMK TELKOM "/>
         <Text style={styles.welcome}>Well Hellow People!</Text>
         <Image style={{height:250,width:400}} source={require('./me.jpg')}/>
         <Text style={styles.instructions}>Nama  : Rizky Eventa Bahtiar</Text>
